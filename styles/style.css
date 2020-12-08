@@ -7,10 +7,12 @@
 body{
     background-color: #2B2C2C;
     font-family: 'Roboto', sans-serif;
+    font-weight: 400 !important;
 }
 
 main{
     display: flex;
+    flex-wrap: wrap;
 }
 
 main nav{
@@ -36,6 +38,19 @@ main nav div.btn-email{
     background-color: #F4C90C;
 }
 
+main nav div.btn-email a{
+    text-decoration: none;
+    color: black;
+    background-color: wheat;
+}
+
+main nav div.btn-email a span{
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    padding: 9px;
+}
+
 main nav ul{
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +67,6 @@ main nav ul li a{
     text-decoration: none;
     padding: 18px 0;
     color: #F4C90C;
-    font-weight: bold;
     font-size: 13px;
 }
 
@@ -60,3 +74,64 @@ main nav ul li a:hover{
     border-bottom: 3px solid #F4C90C;
 }
 
+/* banner */
+
+div.banner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+div.banner div.redes{
+    width: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.banner div.redes a{
+    margin: auto;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 82.99px 20.8px 82.99px 20.8px;
+}
+
+div.banner div.redes a:hover{
+    background-color: #F4C90C;
+}
+
+div.banner div.presentacion{
+    width: 95%;
+    background-color: white;
+}
+
+div.banner div.presentacion div{
+    width: 49%;
+    padding: 120px 100px 100px 120px;
+    background-color: #2b2c2cbb;
+}
+
+div.banner div.presentacion div h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+h2.nombre, div.banner div.presentacion div p{
+    color: white;
+    font-size: 13px;
+}
+
+h2.profesion{
+    color: #F4C90C;
+}
+
+div.banner div.presentacion div button{
+    width: 170px;
+    font-size: 13px;
+    height: 45px;
+    margin-top: 30px;
+    background-color: #F4C90C;
+    border: none;
+    cursor: pointer;
+}
