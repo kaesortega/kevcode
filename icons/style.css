@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?nfertc');
-  src:  url('fonts/icomoon.eot?nfertc#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?nfertc') format('truetype'),
-    url('fonts/icomoon.woff?nfertc') format('woff'),
-    url('fonts/icomoon.svg?nfertc#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?cyvpzu');
+  src:  url('fonts/icomoon.eot?cyvpzu#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?cyvpzu') format('truetype'),
+    url('fonts/icomoon.woff?cyvpzu') format('woff'),
+    url('fonts/icomoon.svg?cyvpzu#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -33,6 +33,15 @@
   content: "\e909";
   color: #1877f2;
 }
+.icon-file-code-o:before {
+  content: "\e902";
+}
+.icon-laptop:before {
+  content: "\e901";
+}
 .icon-envelope:before {
   content: "\e900";
+}
+.icon-database:before {
+  content: "\e964";
 }
