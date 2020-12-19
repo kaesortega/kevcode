@@ -11,43 +11,44 @@ body{
 }
 
 
-main nav{
+nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    background-color: #272727e3;
 }
 
-main nav div{
+nav div{
     width: 15%;
     padding: 10px;
 
 }
 
-main nav div.brand{         /* == Contenedor del logo == */
+nav div.brand{         /* == Contenedor del logo == */
     width: 160px;
     border: 1px solid gray;
 }
 
-main nav div.btn-email{
+nav div.btn-email{
     width: 65px;
     background-color: #F4C90C;
 }
 
-main nav div.btn-email a{
+nav div.btn-email a{
     text-decoration: none;
     color: black;
     background-color: wheat;
 }
 
-main nav div.btn-email a span{
+nav div.btn-email a span{
     text-align: center;
     display: block;
     font-size: 25px;
     padding: 9px;
 }
 
-main nav ul{
+nav ul{
     display: flex;
     /* flex-wrap: wrap; */
     list-style: none;
@@ -56,18 +57,14 @@ main nav ul{
     justify-content: space-around;
 }
 
-main nav ul li{
-    /* margin: 0 15px ; */
-}
-
-main nav ul li a{
+nav ul li a{
     text-decoration: none;
     padding: 18px 0;
     color: #F4C90C;
     font-size: 13px;
 }
 
-main nav ul li a:hover{
+nav ul li a:hover{
     border-bottom: 3px solid #F4C90C;
 }
 
