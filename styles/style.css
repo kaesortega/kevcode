@@ -103,7 +103,7 @@ div.banner div.presentacion{
 div.banner div.presentacion div{
     width: 49%;
     padding: 120px 100px 100px 120px;
-    background-color: #2b2c2cbb;
+    background-color: #2b2c2c73;
 }
 
 div.banner div.presentacion div h2{
@@ -407,7 +407,7 @@ section.three form div input, section.three form > div > textarea{
         display: none;
         width: 100%;
         order: 2;
-        padding: 0;
+        padding: 0 20px;
     }
 
     main nav ul li{
