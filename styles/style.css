@@ -10,11 +10,6 @@ body{
     font-weight: 400 !important;
 }
 
-main{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
 
 main nav{
     display: flex;
@@ -131,10 +126,11 @@ div.banner div.presentacion div button{
     width: 170px;
     font-size: 13px;
     height: 45px;
-    margin-top: 30px;
     background-color: #F4C90C;
     border: none;
     cursor: pointer;
+    display: block;
+    margin: 15px auto;
 }
 
 section.one{
@@ -142,7 +138,7 @@ section.one{
     flex-wrap: wrap;
     width: 1300px;
     margin: 30px auto;
-    /* background-color: antiquewhite; */
+
 }
 
 section.one .left-col{
@@ -152,6 +148,25 @@ section.one .left-col{
     /* background-color: #F4C90C; */
     padding: 50px 80px;
     color: #CCCCCC;
+}
+
+div#up-menu{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 25px;
+    position: fixed;
+    right:30px;
+    bottom: 10px;
+}
+
+div#up-menu a{
+    font-size: 20px;
+    display: block;
+    width: 20px;
+    padding: 11px 0;
+    margin: 0 auto;
+    color: #F4C90C
 }
 
 section.one .left-col h2{
@@ -195,6 +210,7 @@ div.right-col{
     position: relative;
     padding: 50px 100px;
     width: 50%;
+    background-color: red;
 }
 
 div.right-col .fondo-color{
@@ -320,7 +336,7 @@ section.three form > div > label{
     margin-bottom: 15px;
 }
 
-section.three form > div >input, section.three form > div > textarea{
+section.three form div input, section.three form > div > textarea{
     width: 100%;
     height: 40px;
     background-color: #2B2C2C;
@@ -336,4 +352,135 @@ section.three form > div >input, section.three form > div > textarea{
 
 .textarea textarea{
     height: 200px !important;
+}
+
+.inp-submit:hover{
+    background-color: #cccccc5e;
+    color: #F4C90C;
+    cursor: pointer;
+    border: none;
+}
+
+.inp-submit{
+    border: none !important;
+    transition-property: background,color;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    transition-delay: .1s;
+}
+
+.hamburguerMenu{
+    display: none;
+}
+
+@media screen and (max-width:767px){
+    .hamburguerMenu{
+        display: flex;
+        border: 1px solid gray;
+        width: 30%;
+
+    }
+    main nav div.btn-email{
+        width: 20%;
+    }
+
+    main nav div.brand{
+        width: 50%;
+    }
+
+    .hamburguerMenu a{
+        text-decoration: none;
+        color: #CCCCCC;
+        font-size: 30px;
+        margin: auto;
+    }
+
+    main nav{
+        justify-content: inherit;
+    }
+
+    main nav ul{
+        display: none;
+        width: 100%;
+        order: 2;
+        padding: 0;
+    }
+
+    main nav ul li{
+        padding: 10px 0;
+    }
+
+    main nav ul li a{
+        font-size: 20px;
+    }
+
+    div.banner{
+        margin: 0 auto;
+    }
+    
+    div.banner div.presentacion{
+        width: 100%;
+    }
+
+    div.banner div.presentacion div{
+        width: 100%;
+        padding: 120px 19px;
+    }
+
+    div.banner div.presentacion div *{
+        text-align: center;
+    }
+
+    div.banner div.presentacion div button{
+        justify-content: center;
+    }
+
+    div.banner div.redes{
+        display: none;
+    }
+
+    section.one{
+        width: 100%;
+    }
+
+    section.one div.left-col{
+        width: 100%;
+        padding: 15px;
+    }
+    section.one div.right-col{
+        display: none;
+    }
+
+    .servicios div{
+        width: 90%;
+        margin: 10px auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    div.line-l-i{
+        width: 80%;
+        margin-bottom: 10px !important;
+        margin-top: 5px !important;
+    }
+
+    .line-c-i{
+        width: 50%;
+    }
+
+    .left-col button{
+        width: 100%;
+    }
+
+    section.two,section.three{
+        margin: 25px auto;
+    }
+
+    section.three form{
+        margin: 50px 0;
+    }
+
+    section.three form div{
+        width: 100%;
+    }
 }
