@@ -207,9 +207,8 @@ section.one .left-col h2 .thin-letter{
 
 div.right-col{
     position: relative;
-    padding: 50px 100px;
+    padding: 50px 200px;
     width: 50%;
-    background-color: red;
 }
 
 div.right-col .fondo-color{
