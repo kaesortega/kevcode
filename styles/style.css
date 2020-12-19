@@ -16,7 +16,7 @@ nav{
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-    background-color: #272727e3;
+    background-color: #272727;
 }
 
 nav div{
@@ -258,6 +258,12 @@ section.two, section.three{
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
+}
+
+.container-nav{
+    position: fixed; top: 0;
+    width: 100%;
+    z-index: 4;
 }
 
 .line-l,.line-l-i{
