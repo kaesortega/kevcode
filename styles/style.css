@@ -49,14 +49,15 @@ main nav div.btn-email a span{
 
 main nav ul{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     list-style: none;
     padding: 20px 0;
-    width: 35%;
+    width: 40%;
+    justify-content: space-around;
 }
 
 main nav ul li{
-    margin: 0 15px ;
+    /* margin: 0 15px ; */
 }
 
 main nav ul li a{
@@ -130,13 +131,14 @@ div.banner div.presentacion div button{
     border: none;
     cursor: pointer;
     display: block;
-    margin: 15px auto;
+    margin: 15px 0; 
 }
 
 section.one{
     display: flex;
     flex-wrap: wrap;
-    width: 1300px;
+    /* width: 1300px; */
+    width: 100%;
     margin: 30px auto;
 
 }
@@ -432,7 +434,8 @@ section.three form div input, section.three form > div > textarea{
     }
 
     div.banner div.presentacion div button{
-        justify-content: center;
+        /* justify-content: center; */
+        margin: 15px auto;
     }
 
     div.banner div.redes{
@@ -482,5 +485,20 @@ section.three form div input, section.three form > div > textarea{
 
     section.three form div{
         width: 100%;
+    }
+
+    .servicios{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1300px){
+
+    div.banner div.redes{
+        display: none;
+    }
+
+    div.banner div.presentacion{
+        margin: 0 auto;
     }
 }
