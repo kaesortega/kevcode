@@ -20,13 +20,17 @@
             </div>
             
             <!-- Menu de Navegacion -->
-            <ul>
+            <ul class="menu-des">
                 <li><a href="#"> Home</a></li>
                 <li><a href="#">Acerca de mi</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Portafolio</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
+
+            <div class="hamburguerMenu">
+                <a href="#" id="des"><span class="icon-th-menu"></span></a>
+            </div>
 
             <!-- Boton para enviar correo -->
             <div class="btn-email">
@@ -65,14 +69,14 @@
                 </div>
                 <button onclick="portafolio()">Mi portafolio</button>
             </div>
-            <!-- <div class="right-col">
-                <div class="container-img-one">
+            <div class="right-col">
+                <!-- <div class="container-img-one">
                     <img src="./imgs/300.png" alt="">
                 </div>
                 <div class="fondo-color">
 
-                </div>
-            </div> -->
+                </div> -->
+            </div>
         </section>
         
         <section class="two">
@@ -148,11 +152,26 @@
                 <div class="textarea">
                     <label for="">Escribe tu consulta</label><textarea name="" maxlength="1500"></textarea>
                 </div>
+                <div class="cont-inp-submit">
+                    <input type="submit" value="Enviar" class="inp-submit">
+                </div>
             </form>
         </section>
+        <div id="up-menu">
+            <a href=".nav-bar"><span class="icon-arrow-thick-up"></span></a>
+        </div>
         <footer>
 
         </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <script>
+            $("#des").click(function(){
+                var menu = $(".menu-des");
+                menu.toggle("slow");
+                
+            })
+        </script>
+        
 </body>
 </html>
