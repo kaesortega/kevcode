@@ -1,3 +1,10 @@
+<?php 
+
+    session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,24 +20,25 @@
 </head>
 <body>
     <main>
+        <div id="home" style="height:10px"></div>
         <div class="container-nav">
             <nav class="nav-bar">
                 <div class="brand">
                     <!-- LOGO -->
-                    <img src="" alt="">
+                    <img src="imgs/logo.svg" alt="">
                 </div>
                 
                 <!-- Menu de Navegacion -->
                 <ul class="menu-des">
-                    <li><a href="#"> Home</a></li>
-                    <li><a href="#">Acerca de mi</a></li>
-                    <li><a href="#">Servicios</a></li>
+                    <li><a href="index.php#home">Home</a></li>
+                    <li><a href="index.php#acercaDeMi">Acerca de mi</a></li>
+                    <li><a href="index.php#servicios">Servicios</a></li>
                     <li><a href="#">Portafolio</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="index.php#contacto">Contacto</a></li>
                 </ul>
 
                 <div class="hamburguerMenu">
-                    <a href="#" id="des"><span class="icon-th-menu"></span></a>
+                    <a id="des"><span class="icon-th-menu"></span></a>
                 </div>
 
                 <!-- Boton para enviar correo -->
@@ -53,6 +61,7 @@
                 </div>
             </div>
         </div>
+        <div id="servicios" style="height: 10px;"></div>
         <section class="one">
             <div class="left-col">
                 <h2><span class="thin-letter"> Soluciones innovadoras para impulsar</span> sus proyectos creativos</h2>
@@ -73,14 +82,14 @@
             </div>
             <div class="right-col">
                 <div class="container-img-one">
-                    <img src="./imgs/300.png" alt="">
+                    <img src="./imgs/proceso.JPG" alt="">
                 </div>
                 <div class="fondo-color">
 
                 </div>
             </div>
         </section>
-        
+        <div id="acercaDeMi" style="height: 10px;"></div>
         <section class="two">
             <div class="container-title">
                 <h2>Mi proceso de trabajo</h2>
@@ -124,7 +133,8 @@
                 </div>
             </div>
         </section>
-        <section class="three">
+        <div id="contacto" style="width:10px; height: 10px"></div>
+        <section class="three" id="responseServeMsg">
             <div class="container-title">
                 <h2>Ponte en contacto</h2>
                 <div class="container-line">
@@ -133,7 +143,19 @@
                 </div>
             </div>
 
-            <p>En un plazo de maximo 48 horas tendras respuesta de mi parte</p>
+            <?php 
+                if(isset($_SESSION['respuestaB'])){
+                    echo "<p>".$_SESSION['respuestaB']."</p>";
+                    unset($_SESSION['respuestaB']);
+                }
+                if(isset($_SESSION['respuestaM'])){
+                    echo "<p>".$_SESSION['respuestaM']."</p>";
+                    unset($_SESSION['respuestaM']);
+                }
+            
+            ?>
+            <!-- <p>En un plazo de maximo 48 horas tendras respuesta de mi parte</p> -->
+
 
             <form action="./scripts/main.php" method="POST">
                 <div>
@@ -165,9 +187,7 @@
                 </div>
             </form>
         </section>
-        <div id="up-menu">
-            <a href=".nav-bar"><span class="icon-arrow-thick-up"></span></a>
-        </div>
+        
         <footer>
 
         </footer>
