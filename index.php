@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollador y diseñador web | Kevin Ortega</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/wemerge.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
     <link rel="stylesheet" href="./icons/style.css">
 </head>
 <body>
-    <main>
+    <main id="principal">
         <div id="home" style="height:10px"></div>
         <div class="container-nav">
             <nav class="nav-bar">
@@ -33,7 +34,7 @@
                     <li><a href="index.php#home">Home</a></li>
                     <li><a href="index.php#acercaDeMi">Acerca de mi</a></li>
                     <li><a href="index.php#servicios">Servicios</a></li>
-                    <li><a href="#">Portafolio</a></li>
+                    <li><a class="desplegar-btn" href="#">Portafolio</a></li>
                     <li><a href="index.php#contacto">Contacto</a></li>
                 </ul>
 
@@ -57,7 +58,7 @@
                     <h2 class="nombre">¡Soy Kevin Ortega! </h2>
                     <h2 class="profesion">Desarrollador y diseñador web</h2>
                     <p class="descripcion">hago la pagina web de tus sueños realidad</p>
-                    <button onclick="portafolio()">Portafolio</button>
+                    <button class="desplegar-btn">Portafolio</button>
                 </div>
             </div>
         </div>
@@ -78,7 +79,7 @@
                         <span class="icon-database"></span><p>Diseño y modelado de base de datos</p>
                     </div>
                 </div>
-                <button onclick="portafolio()">Mi portafolio</button>
+                <button class="desplegar-btn">Mi portafolio</button>
             </div>
             <div class="right-col">
                 <div class="container-img-one">
@@ -192,14 +193,19 @@
 
         </footer>
     </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+    <script src="scripts/jquery-3.5.1.js"></script>
+    <script>
             $("#des").click(function(){
                 var menu = $(".menu-des");
                 menu.toggle("slow");
                 
             })
-        </script>
+    </script>
+    
+    <script src="scripts/wemerge.js"></script>
+    <script src="scripts/wreplegar.js"></script>
+    <script src="scripts/State.js"></script>
         
 </body>
 </html>
