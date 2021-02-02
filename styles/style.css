@@ -418,11 +418,12 @@ section.three form div input, section.three form > div > textarea{
         width: 100%;
         background: url("../imgs/banner1Mobile.JPG") no-repeat center center;
         background-size: 100%;
+        margin-top: 64px !important;
     }
 
     div.banner div.presentacion div{
         width: 100%;
-        padding: 120px 19px;
+        padding: 50px 0 !important;
     }
 
     div.banner div.presentacion div *{
@@ -470,12 +471,20 @@ section.three form div input, section.three form > div > textarea{
         width: 100%;
     }
 
+    .title-2{
+        margin-bottom: 30px;
+    }
+
     section.two,section.three{
         margin: 25px auto;
     }
 
+    section.two{
+        margin-bottom: 0;
+    }
+
     section.three form{
-        margin: 50px 0;
+        margin: 0;
     }
 
     section.three form div{
@@ -484,6 +493,11 @@ section.three form div input, section.three form > div > textarea{
 
     .servicios{
         width: 100%;
+    }
+
+    #contacto{
+        margin-bottom: 65px;
+        height: 1px;
     }
 }
 
@@ -496,4 +510,58 @@ section.three form div input, section.three form > div > textarea{
     div.banner div.presentacion{
         margin: 0 auto;
     }
+}
+
+@media screen and (max-width:860px){
+    div.banner div.presentacion{
+        width: 100%;
+    }
+
+    section.one .left-col{
+
+        padding: 0px 80px;
+        color: #CCCCCC;
+    }
+
+    div.right-col{
+        padding: 0;
+    }
+
+    div.right-col .container-img-one{
+        background-color: inherit;
+        /* width: 100%; */
+    }
+
+    div.right-col .fondo-color{
+        display: none;
+    }
+
+    .banner{
+        flex-direction: column;
+    }
+
+    div.banner div.redes{
+        flex-direction:row;
+        display: flex;
+        width: 100%;
+        order: 1;
+    }
+
+    div.banner div.presentacion{
+        order: 0;
+    }
+
+    div.banner div.redes a{
+        padding: 15px;
+        width: 100%;
+        /* margin: auto; */
+        text-align: center;
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    div.banner div.presentacion div {
+
+        padding: 70px 100px 70px 120px;
+    }
+
 }

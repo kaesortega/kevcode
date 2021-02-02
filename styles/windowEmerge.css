@@ -1,0 +1,82 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+#ventanaEmergente{
+    background-color:white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    z-index: 5;
+}
+
+#contenedorCards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+#contenedorCards #tituloWemerge{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #F4C90C;
+    padding: 10px 0;
+    /* border-top-left-radius: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.cards{
+    width: 42%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.cards:hover{
+    box-shadow: 2px 2px 2px 2px rgb(189, 189, 189);
+}
+
+#superContainerClose{
+    position: fixed;
+    bottom: 20px;
+}
+
+#containerClose{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#btn-close{
+    width: 50px;
+    height: 50px;
+    background-color: #F4C90C;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+#btn-close span{
+    display: block;
+    width: 80%;
+    font-size: 40px;
+    margin: 5px auto;
+}
+
+.cards img{
+    width: 100%;
+    height: 100px;
+}
+
+.cards{
+    background-color: #f8f8f8;
+}

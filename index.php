@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollador y diseñador web | Kevin Ortega</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/wemerge.css">
+    <link rel="stylesheet" href="./styles/windowEmerge.css">
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -20,8 +20,9 @@
     <link rel="stylesheet" href="./icons/style.css">
 </head>
 <body>
+    <div id="secundario"></div>
     <main id="principal">
-        <div id="home" style="height:10px"></div>
+        <div id="home"></div>
         <div class="container-nav">
             <nav class="nav-bar">
                 <div class="brand">
@@ -76,7 +77,7 @@
                         <span class="icon-file-code-o"></span><p>Desarrollo web</p>
                     </div>
                     <div>
-                        <span class="icon-database"></span><p>Diseño y modelado de base de datos</p>
+                        <span class="icon-database"></span><p>Desarrollo de aplicaciones web</p>
                     </div>
                 </div>
                 <button class="desplegar-btn">Mi portafolio</button>
@@ -134,9 +135,9 @@
                 </div>
             </div>
         </section>
-        <div id="contacto" style="width:10px; height: 10px"></div>
+        <div id="contacto"></div>
         <section class="three" id="responseServeMsg">
-            <div class="container-title">
+            <div class="container-title title-2">
                 <h2>Ponte en contacto</h2>
                 <div class="container-line">
                     <div class="line-l"></div>
@@ -203,9 +204,10 @@
             })
     </script>
     
-    <script src="scripts/wemerge.js"></script>
-    <script src="scripts/wreplegar.js"></script>
-    <script src="scripts/State.js"></script>
+    <script src="./scripts/WindowEmerge.js"></script>
+    <!-- <script src="/scripts/jquery-3.5.1.js"></script> -->
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/Card.js"></script>
         
 </body>
 </html>
